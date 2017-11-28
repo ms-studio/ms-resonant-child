@@ -1,0 +1,24 @@
+/* Custom CSS */
+
+.single h1,
+.single h2,
+.archive h1,
+.archive h2 a,
+.nav-previous a, .nav-next a {
+	color: #6c00c7 ;
+}
+
+.archive h2 a:hover,
+.jp-relatedposts-post-title a {
+/*	color: #18d2bb;*/
+}
+ 
+
+
+/* Fixing Carousel */ 
+
+body .tb-close-icon:before, body .tb-close-icon:after, .jp-carousel-close-hint span:before, .jp-carousel-close-hint span:after,
+body .jp-carousel-light .jp-carousel-close-hint span:before, 
+body .jp-carousel-light .jp-carousel-close-hint span:after {
+	background-color: #999;
+}
