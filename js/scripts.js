@@ -62,7 +62,7 @@ $("body").emailSpamProtection("email");
 	 * Make that iframe exactly the right size!
 	*/
 	
-	$(".entry-content p iframe[src*='https://www.slideshare']").each(function() {
+	$(".entry-content iframe[src*='www.slideshare']").each(function() {
 	  var $this = $(this);
 	  
 	  var slideW = $this.attr('width');
