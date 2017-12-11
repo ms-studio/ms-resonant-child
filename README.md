@@ -1,9 +1,8 @@
 # ms-resonant
 
-A child theme of [Resonant](https://themeskingdom.com/wordpress-themes/resonant-portfolio-wordpress-theme/), by Themes Kingdom
-Version: 0.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+A child theme of [Resonant](https://themeskingdom.com/wordpress-themes/resonant-portfolio-wordpress-theme/), by Themes Kingdom  
+License: GNU General Public License v2 or later  
+Used at: [https://ms-studio.net/](https://ms-studio.net/)
 
 ## Typography
 
