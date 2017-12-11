@@ -91,3 +91,19 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     }
     return $title;
 });
+
+
+// Disable Jetpack Photon:
+// https://solvemethod.com/disable-jetpack-photon-caching-page-specific/
+
+// Disable Photon caching in single post/media/portfolio pages
+function no_photon_by_single_post_page() {
+  if ( is_single() ) {
+    add_filter( 'jetpack_photon_skip_image', '__return_true');
+  }
+  if ( is_archive() ) {
+      add_filter( 'jetpack_photon_skip_image', '__return_true');
+    }
+}
+add_action('wp', 'no_photon_by_single_post_page');
+
