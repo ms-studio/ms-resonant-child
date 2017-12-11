@@ -361,3 +361,11 @@ label, form.contact-form label {
 	display:  none;
 }
 
+
+/*
+ * Slideshare embedding
+*/
+
+.entry-content p iframe[src*="https://www.slideshare"] {
+	width: 100% !important;
+}

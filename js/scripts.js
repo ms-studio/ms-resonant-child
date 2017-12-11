@@ -42,7 +42,7 @@ $("body").emailSpamProtection("email");
 * Fix single images...
 * Let's do something for images that have the following structure:
 
-.entry-content a img 
+.entry-content p > a > img 
 
 * Give them a CSS class .fix-single-img
 */
@@ -53,12 +53,37 @@ $("body").emailSpamProtection("email");
     $(this).parent().addClass('single-img-parent thickbox');
     
     if ( $(this).hasClass( "alignleft" ) ) {
-     
         $(this).parent().addClass('alignleft-parent');
- 
     }
-        
   });
+
+	/*
+	 * Improve Slideshare embedding
+	 * Make that iframe exactly the right size!
+	*/
+	
+	$(".entry-content p iframe[src*='https://www.slideshare']").each(function() {
+	  var $this = $(this);
+	  
+	  var slideW = $this.attr('width');
+	  var slideH = $this.attr('height');
+	  var slideRatio = (slideH / slideW);
+	  
+	  var itemW = $this.width();
+	  var idealH = itemW*slideRatio;
+	  
+	  // calculate max height: window - nav bar...
+	  var maxH = ( $(window).height() - 162);
+	  if ( idealH > maxH ){
+	  	$this.css( "height", maxH );
+	  	// console.log("applied maxHeight: "+maxH);
+	  } else {
+	  	$this.css( "height", idealH );
+	  	// console.log("applied idealHeight: "+idealH);
+	  }
+
+	});
+	
 
 
 });
