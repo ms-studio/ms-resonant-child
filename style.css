@@ -165,6 +165,9 @@ hr {
 }
 
 
+body.header-scrolled .site-header {
+	background-color: rgba(255, 255, 255, 0.6);
+}
 
 body div#jp-relatedposts {
 	margin-bottom: 1em;
@@ -174,6 +177,8 @@ body div#jp-relatedposts {
 	color: #000;
 	opacity: .7;
 }
+
+/* @group Blockquotes */
 
 /* BlockQuotes */
 
@@ -191,6 +196,10 @@ body div#jp-relatedposts {
 	font-weight: 400;
 }
 
+/* @end */
+
+
+
 /* Fixing Carousel ! */ 
 
 body .tb-close-icon:before, body .tb-close-icon:after, .jp-carousel-close-hint span:before, .jp-carousel-close-hint span:after,
@@ -202,10 +211,13 @@ body .jp-carousel-light .jp-carousel-close-hint span:after {
 /* Related Posts */
 
 body #jp-relatedposts {
-	background: #e4e4e4;
+	background: lavender;
 	padding: 3rem 2rem;
 }
 
+.jp-relatedposts-post p {
+	color: #000;
+}
 
 
 /* Links in post body */
@@ -296,6 +308,7 @@ a.single-img-parent {
 	max-width: 100%;
 }
 
+/* @group Code Samples */
 
 /* Font for Code Samples */
 
@@ -334,7 +347,9 @@ code {
    background-color: #fffb80;
 }
 
-/* Formidable Overrides */
+/* @end */
+
+/* @group formidable overrides */
 
 .frm_forms {
 	margin-top: 0;
@@ -352,6 +367,8 @@ label, form.contact-form label {
 .frm_style_formidable-style.with_frm_style div.frm_description {
 	margin-top: 0.5em;
 }
+
+/* @end */
 
 /* Jetpack Minimzation */
 
