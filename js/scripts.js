@@ -39,15 +39,16 @@ $("body").emailSpamProtection("email");
 
 
 /*
-* Fix single images...
+* Fix single images
 * Let's do something for images that have the following structure:
 
 .entry-content p > a > img 
+.entry-content figure > a > img
 
 * Give them a CSS class .fix-single-img
 */
 
-	$(".entry-content p > a > img").each(function() {
+	$(".entry-content p > a > img, .entry-content figure > a > img").each(function() {
     var $this = $(this);
     $(this).addClass('fix-single-img');
     $(this).parent().addClass('single-img-parent thickbox');
