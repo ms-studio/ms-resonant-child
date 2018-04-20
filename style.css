@@ -68,7 +68,7 @@ body, input, textarea, keygen, select, button, body .sd-social-icon .sd-content 
 
 
 /*
- * Contrast: Sans Serif
+ * Contrast Font: Sans Serif
 */
 
 
@@ -176,6 +176,11 @@ body div#jp-relatedposts {
 .wp-caption-text, .wp-caption-dd {
 	color: #000;
 	opacity: .7;
+}
+
+/* Fixing links in posts */
+.entry-content a {
+	display: inline;
 }
 
 /* @group Blockquotes */
