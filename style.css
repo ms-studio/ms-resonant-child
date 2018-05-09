@@ -157,6 +157,24 @@ hr {
 	/*color: #6c00c7 ;*/
 }
 
+.site {
+	background: linear-gradient(
+		90deg, 
+		#fff 0%, 
+		#fff 5%, 
+		#fff 10%,
+		#fff 90%,
+		#f0ecff 95%, 	
+		#d0c4ff 100%
+	);
+}
+body,
+.site-content,
+.header-scrolled .site-header,
+.contact-filter,
+.search-wrap {
+	background: transparent !important;
+}
 
 
 .archive h2 a:hover,
