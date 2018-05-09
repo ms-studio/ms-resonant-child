@@ -54,7 +54,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	url('fonts/SourceSerifPro-boldit.woff') format('woff');
 }
 
-/* Custom CSS */
+
+/* @group Typography */
 
 /*
  * Redefine Main Font
@@ -68,7 +69,7 @@ body, input, textarea, keygen, select, button, body .sd-social-icon .sd-content 
 
 
 /*
- * Contrast Font: Sans Serif
+ * Contrast Font
 */
 
 
@@ -139,23 +140,15 @@ body, input, textarea, keygen, select, button, body .sd-social-icon .sd-content 
 /*	font-family: 'Ume P Gothic C5','Cooper Hewitt','Oswald Regular', Helvetica, Arial, sans-serif;*/
 }
 
+/* @end */
 
-.header-scrolled .site-header {
-	background: #000;
-	color: #fff;
-}
+/* @group Base Elements */
 
 hr {
 	clear: both;
 }
 
-.single h1,
-.single h2,
-.archive h1,
-.archive h2 a,
-.nav-previous a, .nav-next a {
-	/*color: #6c00c7 ;*/
-}
+/* @end */
 
 .site {
 	background: linear-gradient(
@@ -176,74 +169,32 @@ body,
 	background: transparent !important;
 }
 
+/* @group Header */
 
-.archive h2 a:hover,
-.jp-relatedposts-post-title a {
-/*	color: #18d2bb;*/
+.header-scrolled .site-header {
+	background: #000;
+	color: #fff;
 }
-
 
 body.header-scrolled .site-header {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
-body div#jp-relatedposts {
-	margin-bottom: 1em;
-}
+/* @end */
 
-.wp-caption-text, .wp-caption-dd {
-	color: #000;
-	opacity: .7;
-}
+/* @group Post Content */
 
-/* Fixing links in posts */
+/* Links in content area */
+
 .entry-content a {
 	display: inline;
 }
 
-/* @group Blockquotes */
-
-/* BlockQuotes */
-
-.single blockquote, .page blockquote {
-	max-width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: left;
-	background: #e4e4e4;
-	padding: 2rem 3rem;
+.entry-content a:before,
+.entry-content a:hover:before {
+	display: none;
 }
 
-.single blockquote, q, 
-.single blockquote p {
-	font-weight: 400;
-}
-
-/* @end */
-
-
-
-/* Fixing Carousel ! */ 
-
-body .tb-close-icon:before, body .tb-close-icon:after, .jp-carousel-close-hint span:before, .jp-carousel-close-hint span:after,
-body .jp-carousel-light .jp-carousel-close-hint span:before, 
-body .jp-carousel-light .jp-carousel-close-hint span:after {
-	background-color: #999;
-}
-
-/* Related Posts */
-
-body #jp-relatedposts {
-	background: lavender;
-	padding: 3rem 2rem;
-}
-
-.jp-relatedposts-post p {
-	color: #000;
-}
-
-
-/* Links in post body */
 .entry-content p a,
 .entry-content ul a {
 	background-color: #fefcbe;
@@ -262,6 +213,53 @@ body #jp-relatedposts {
 	display: block;
 }
 
+/* Captions */
+.wp-caption-text, 
+.wp-caption-dd {
+	color: #000;
+	opacity: .7;
+}
+
+/* Blockquotes */
+
+.single blockquote, .page blockquote {
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
+	background: #e4e4e4;
+	padding: 2rem 3rem;
+}
+
+.single blockquote, q, 
+.single blockquote p {
+	font-weight: 400;
+}
+
+/* Entry Footer */
+
+.entry-footer .cat-links {
+	margin-right: 0.5em;
+}
+
+/* @end */
+
+
+/* @group Jetpack Related Posts - Overrides */
+
+body #jp-relatedposts {
+	background: lavender;
+	padding: 3rem 2rem;
+}
+
+body div#jp-relatedposts {
+	margin-bottom: 1em;
+}
+
+.jp-relatedposts-post p {
+	color: #000;
+}
+
 .jp-relatedposts a:hover {
 	background-color: transparent;
 	border-bottom: 0;
@@ -270,27 +268,18 @@ body #jp-relatedposts {
 	text-decoration: underline;
 }
 
-.entry-content a:before,
-.entry-content a:hover:before {
-	display: none;
-}
-
 .jp-relatedposts a {
 	background-color: transparent;
 }
 
-.entry-footer .cat-links {
-	margin-right: 0.5em;
-}
+/* @end */
 
+/* @group Images */
 
 /*
  * Fix Single Images
+ * Note: works with JavaScript
 */
-
-.fix-single-img {
-/*	padding: 0;*/
-}
 
 img.alignleft.fix-single-img, 
 img.alignright.fix-single-img {
@@ -319,7 +308,7 @@ a.single-img-parent {
 
 
 /*
-* Listing featured image
+* Listing - featured image
 */
 
 .listing .featured-image a {
@@ -330,6 +319,8 @@ a.single-img-parent {
 	width: 100%;
 	max-width: 100%;
 }
+
+/* @end */
 
 /* @group Code Samples */
 
@@ -367,18 +358,22 @@ code, kbd, pre, samp,
 }
 
 code {
-   background-color: #fffb80;
+  background-color: #fffb80;
 }
 
 /* @end */
 
-/* @group formidable overrides */
+/* @group Formidable Overrides */
 
 .frm_forms {
 	margin-top: 0;
 }
 
-.frm_style_formidable-style.with_frm_style p.description, .frm_style_formidable-style.with_frm_style div.description, .frm_style_formidable-style.with_frm_style div.frm_description, .frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, .frm_style_formidable-style.with_frm_style .frm_error,
+.frm_style_formidable-style.with_frm_style p.description, 
+.frm_style_formidable-style.with_frm_style div.description, 
+.frm_style_formidable-style.with_frm_style div.frm_description, 
+.frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, 
+.frm_style_formidable-style.with_frm_style .frm_error,
 .frm_style_formidable-style.with_frm_style .frm_form_field.frm_html_container {
 	font-size: 1em;
 }
@@ -393,14 +388,29 @@ label, form.contact-form label {
 
 /* @end */
 
-/* Jetpack Minimzation */
+
+/* @group Jetpack Carousel */
+
+body .tb-close-icon:before, 
+body .tb-close-icon:after, 
+.jp-carousel-close-hint span:before, 
+.jp-carousel-close-hint span:after,
+body .jp-carousel-light .jp-carousel-close-hint span:before, 
+body .jp-carousel-light .jp-carousel-close-hint span:after {
+	background-color: #999;
+}
+
+/* Jetpack - hide details */
 
 .jp-carousel-wrap .jp-carousel-titleanddesc,
 .jp-carousel-wrap .jp-carousel-left-column-wrapper,
 .jp-carousel-wrap .jp-carousel-image-meta {
-	display:  none;
+	display: none;
 }
 
+/* @end */
+
+/* @group Slideshare Embed */
 
 /*
  * Slideshare embedding
@@ -409,3 +419,5 @@ label, form.contact-form label {
 .entry-content iframe[src*="www.slideshare"] {
 	width: 100% !important;
 }
+
+/* @end */

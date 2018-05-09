@@ -86,10 +86,10 @@ add_action( 'wp_enqueue_scripts', 'ms_change_resonant_styles', 11 );
 // utiliser filtre: get_the_archive_title
 
 add_filter( 'get_the_archive_title', function ( $title ) {
-    if( is_category() ) {
-        $title = single_cat_title( '', false );
-    }
-    return $title;
+  if ( is_category() ) {
+    $title = single_cat_title( '', false );
+  }
+  return $title;
 });
 
 
@@ -102,8 +102,8 @@ function no_photon_by_single_post_page() {
     add_filter( 'jetpack_photon_skip_image', '__return_true');
   }
   if ( is_archive() ) {
-      add_filter( 'jetpack_photon_skip_image', '__return_true');
-    }
+    add_filter( 'jetpack_photon_skip_image', '__return_true');
+  }
 }
 add_action('wp', 'no_photon_by_single_post_page');
 
