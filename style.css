@@ -150,20 +150,22 @@ hr {
 
 /* @end */
 
-.site {
+body {
 	background: linear-gradient(
 		90deg, 
-		#fff 0%, 
-		#fff 5%, 
+		#d0c4ff 0%, 
+		#f0ecff 5%, 
 		#fff 10%,
 		#fff 90%,
 		#f0ecff 95%, 	
 		#d0c4ff 100%
 	);
 }
-body,
+
+.site,
 .site-content,
-.header-scrolled .site-header,
+/*.site-header,
+.header-scrolled .site-header,*/
 .contact-filter,
 .search-wrap {
 	background: transparent !important;
@@ -178,6 +180,11 @@ body,
 
 body.header-scrolled .site-header {
 	background-color: rgba(255, 255, 255, 0.6);
+}
+
+body.header-scrolled .site-header,
+body.header-scrolled .site-description {
+	color: rgba(255, 255, 255, 0);
 }
 
 /* @end */
@@ -391,6 +398,8 @@ label, form.contact-form label {
 
 /* @group Jetpack Carousel */
 
+
+
 body .tb-close-icon:before, 
 body .tb-close-icon:after, 
 .jp-carousel-close-hint span:before, 
@@ -402,8 +411,23 @@ body .jp-carousel-light .jp-carousel-close-hint span:after {
 
 /* Jetpack - hide details */
 
-.jp-carousel-wrap .jp-carousel-titleanddesc,
-.jp-carousel-wrap .jp-carousel-left-column-wrapper,
+.jp-carousel-wrap .jp-carousel-titleanddesc-title {
+	font-family: 'News Cycle', 'Cooper Hewitt', Helvetica, Arial, sans-serif !important;
+	font-weight: 400 !important;
+}
+
+body .jp-carousel-light .jp-carousel-titleanddesc {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.jp-carousel-comments,
+#jp-carousel-comment-form-container,
+#jp-carousel-comments-loading {
+	display: none !important;
+}
+
+
 .jp-carousel-wrap .jp-carousel-image-meta {
 	display: none;
 }
