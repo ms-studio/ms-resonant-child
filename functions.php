@@ -8,38 +8,6 @@ function custom_register_styles() {
 		'parent-style', // $handle
 		get_template_directory_uri() . '/style.css' // $src 
 	);
-
-	
-	$dev_mode = true;
-	$host = $_SERVER['HTTP_HOST'];
-	
-	if ( current_user_can('edit_others_pages') ) {
-		 $dev_mode = true;
-	} else if ( $host != 'ms-studio.net' ) {
-		 $dev_mode = true;
-	}
-	
-	if ( $dev_mode == true ) {
-	
-			// DEV: the MAIN stylesheet - uncompressed
-//			wp_enqueue_style( 
-//					'main-style', 
-//					get_stylesheet_directory_uri() . '/css/dev/00-main.css', // main.css
-//					false, // dependencies
-//					time() // version
-//			); 
-	
-	} else {
-	
-			// PROD: the MAIN stylesheet - combined and minified
-//			wp_enqueue_style( 
-//					'main-style', 
-//					get_stylesheet_directory_uri() . '/css/prod/styles.20170127233400.css', // main.css
-//					false, // dependencies
-//					null // version
-//			); 
-	}
-	
 	
 	wp_enqueue_script( 
 	// the MAIN JavaScript file -- development version
