@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Portfolio Random
+ * Template Name: PortfolioPlus
  *
  * @package Resonant
  */
@@ -46,18 +46,16 @@ get_header(); ?>
 					$paged = 1;
 				endif;
 
-				$posts_per_page = get_option( 'jetpack_portfolio_posts_per_page' );
-
 				$args = array(
-					'post_type'      => 'jetpack-portfolio',
-					'posts_per_page' => $posts_per_page,
+					'post_type'      => array('post', 'jetpack-portfolio'),
+					'posts_per_page' => 10,
 					'paged'          => $paged,
-					'orderby'        => 'rand',
+//					'orderby'        => 'date',
 				);
 
 				$wp_query = new WP_Query ( $args );
 
-				if ( post_type_exists( 'jetpack-portfolio' ) && $wp_query->have_posts() ) : ?>
+				if ( $wp_query->have_posts() ) : ?>
 
 					<div class="scrollable portfolio-listing">
 
@@ -74,7 +72,7 @@ get_header(); ?>
 
 								<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
-									<?php get_template_part( 'templates/template-parts/content', 'portfolio' ); ?>
+									<?php get_template_part( 'templates/template-parts/content', 'portfolio-plus' ); ?>
 
 								<?php endwhile; ?>
 
