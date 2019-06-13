@@ -31,7 +31,7 @@ get_header(); ?>
 
 							<?php while ( have_posts() ) : the_post(); ?>
 
-								<?php get_template_part( 'templates/template-parts/content', 'portfolio' ); ?>
+								<?php get_template_part( 'templates/template-parts/content', 'portfolio-plus' ); ?>
 
 							<?php endwhile; ?>
 
