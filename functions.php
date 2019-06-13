@@ -9,6 +9,11 @@ function custom_register_styles() {
 		get_template_directory_uri() . '/style.css' // $src 
 	);
 	
+	wp_enqueue_style( 
+		'theme-style', // $handle
+		get_stylesheet_directory_uri() . '/styles/dev/00-init.css' // $src 
+	);
+	
 	wp_enqueue_script( 
 	// the MAIN JavaScript file -- development version
 			'main-script',
@@ -74,4 +79,14 @@ function no_photon_by_single_post_page() {
   }
 }
 add_action('wp', 'no_photon_by_single_post_page');
+
+
+// Add body classes 
+function ms_resonant_body_classes( $classes ) {
+	
+	$classes[] = esc_attr( 'content-in' );
+	
+	return $classes;
+}
+add_filter( 'body_class', 'ms_resonant_body_classes' );
 
