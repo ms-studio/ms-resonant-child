@@ -1,0 +1,47 @@
+/* @group Images */
+
+/*
+ * Fix Single Images
+ * Note: works with JavaScript
+*/
+
+img.alignleft.fix-single-img, 
+img.alignright.fix-single-img {
+/*	max-width: 100%;*/
+	padding: 1em;
+	padding-top: 0;
+}
+
+img.alignleft.fix-single-img {
+	padding-left: 0;
+}
+
+img.alignright.fix-single-img {
+	padding-right: 0;
+}
+
+a.single-img-parent {
+	background-color: #eee;
+	border-bottom: 0;
+	display: inline;
+}
+
+.alignleft-parent {
+	max-width: 50%;
+}
+
+
+/*
+* Listing - featured image
+*/
+
+.listing .featured-image a {
+	width: 100%;
+}
+
+.listing .featured-image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* @end */

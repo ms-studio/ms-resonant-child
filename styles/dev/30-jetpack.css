@@ -1,0 +1,69 @@
+/* @group Jetpack Related Posts - Overrides */
+
+body #jp-relatedposts {
+	background: lavender;
+	padding: 3rem 2rem;
+}
+
+body div#jp-relatedposts {
+	margin-bottom: 1em;
+}
+
+.jp-relatedposts-post p {
+	color: #000;
+}
+
+.jp-relatedposts a:hover {
+	background-color: transparent;
+	border-bottom: 0;
+}
+.jp-relatedposts h4 a:hover {
+	text-decoration: underline;
+}
+
+.jp-relatedposts a {
+	background-color: transparent;
+}
+
+/* @end */
+
+
+
+/* @group Jetpack Carousel */
+
+
+
+body .tb-close-icon:before, 
+body .tb-close-icon:after, 
+.jp-carousel-close-hint span:before, 
+.jp-carousel-close-hint span:after,
+body .jp-carousel-light .jp-carousel-close-hint span:before, 
+body .jp-carousel-light .jp-carousel-close-hint span:after {
+	background-color: #999;
+}
+
+/* Jetpack - hide details */
+
+.jp-carousel-wrap .jp-carousel-titleanddesc-title {
+	font-family: 'News Cycle', 'Cooper Hewitt', Helvetica, Arial, sans-serif !important;
+	font-weight: 400 !important;
+}
+
+body .jp-carousel-light .jp-carousel-titleanddesc {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.jp-carousel-comments,
+#jp-carousel-comment-form-container,
+#jp-carousel-comments-loading {
+	display: none !important;
+}
+
+
+.jp-carousel-wrap .jp-carousel-image-meta {
+	display: none;
+}
+
+/* @end */
+

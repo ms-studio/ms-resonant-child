@@ -1,0 +1,16 @@
+/* @group Slideshare Embed */
+
+/*
+ * Slideshare embedding
+*/
+
+.entry-content iframe[src*="www.slideshare"] {
+	width: 100% !important;
+}
+
+/* @end */
+
+/* Overrides */
+.portfolio-listing {
+	background-color: transparent !important;
+}

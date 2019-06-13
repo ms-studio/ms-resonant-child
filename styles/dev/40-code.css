@@ -1,0 +1,40 @@
+/* @group Code Samples */
+
+/* Font for Code Samples */
+
+@font-face {
+	font-family: 'Monoist-Web';
+	font-weight: 400;
+	font-style: normal;
+	src: url('fonts/monoist.woff2') format('woff2'),
+	url('fonts/monoist.woff') format('woff');
+}
+
+.syntaxhighlighter {
+	border: 0px solid #cccccc;
+	padding: 1em;
+	border-radius: 0.3em;
+	box-shadow: 0 0 2em #957aff;
+}
+
+code, kbd, pre, samp,
+.entry-content .syntaxhighlighter,
+.entry-content .syntaxhighlighter a,
+.entry-content .syntaxhighlighter div,
+.entry-content .syntaxhighlighter code,
+.entry-content .syntaxhighlighter table,
+.entry-content .syntaxhighlighter table td,
+.entry-content .syntaxhighlighter table tr,
+.entry-content .syntaxhighlighter table tbody,
+.entry-content .syntaxhighlighter table thead,
+.entry-content .syntaxhighlighter table caption,
+.entry-content .syntaxhighlighter textarea
+ {
+	font-family: Monoist, monospace !important;
+}
+
+code {
+  background-color: #fffb80;
+}
+
+/* @end */

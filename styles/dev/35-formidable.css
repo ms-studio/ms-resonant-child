@@ -1,0 +1,24 @@
+/* @group Formidable Overrides */
+
+.frm_forms {
+	margin-top: 0;
+}
+
+.frm_style_formidable-style.with_frm_style p.description, 
+.frm_style_formidable-style.with_frm_style div.description, 
+.frm_style_formidable-style.with_frm_style div.frm_description, 
+.frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, 
+.frm_style_formidable-style.with_frm_style .frm_error,
+.frm_style_formidable-style.with_frm_style .frm_form_field.frm_html_container {
+	font-size: 1em;
+}
+
+label, form.contact-form label {
+	letter-spacing: 0;
+}
+
+.frm_style_formidable-style.with_frm_style div.frm_description {
+	margin-top: 0.5em;
+}
+
+/* @end */

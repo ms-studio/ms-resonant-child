@@ -1,0 +1,11 @@
+/* Override */
+@media only screen and (max-width: 1024px){
+
+.portfolio-wrapper .has-post-thumbnail .entry-title {
+		margin-top: 0px;
+		margin-bottom: 0;
+		padding: 0px;
+		text-align: left;
+	}
+	
+}

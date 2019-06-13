@@ -1,0 +1,136 @@
+/* @group Base Elements */
+
+hr {
+	clear: both;
+}
+
+/* @end */
+
+body {
+	background: linear-gradient(
+		90deg, 
+		#d0c4ff 0%, 
+		#f0ecff 5%, 
+		#fff 10%,
+		#fff 90%,
+		#f0ecff 95%, 	
+		#d0c4ff 100%
+	);
+}
+
+.site,
+.site-content,
+/*.site-header,
+.header-scrolled .site-header,*/
+.contact-filter,
+.search-wrap {
+	background: transparent !important;
+}
+
+/* @group Header */
+
+.header-scrolled .site-header {
+	background: #000;
+	color: #fff;
+}
+
+body.header-scrolled .site-header {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+body.header-scrolled .site-header,
+body.header-scrolled .site-description {
+	color: rgba(255, 255, 255, 0);
+}
+
+/* @end */
+
+/* @group Post Content */
+
+/* Links in content area */
+
+.entry-content a {
+	display: inline;
+}
+
+.entry-content a:before,
+.entry-content a:hover:before {
+	display: none;
+}
+
+.entry-content p a,
+.entry-content ul a {
+	background-color: #fefcbe;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.entry-content p a:hover,
+.entry-content ul a:hover {
+	background-color: #fffb80;
+	border-bottom: 2px solid rgba(0,0,0,1);
+	text-shadow: none;
+}
+
+.entry-content img {
+	margin: 0;
+	padding: 0.5em;
+	display: block;
+}
+
+/* Captions */
+.wp-caption-text, 
+.wp-caption-dd {
+	color: #000;
+	opacity: .7;
+}
+
+/* Blockquotes */
+
+.single blockquote, .page blockquote {
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
+	background: #e4e4e4;
+	padding: 2rem 3rem;
+}
+
+.single blockquote, q, 
+.single blockquote p {
+	font-weight: 400;
+}
+
+/* Entry Footer */
+
+.entry-footer .cat-links {
+	margin-right: 0.5em;
+}
+
+/* @end */
+
+/* Portfolio Plus Template */
+/* Note: masonry is actived at 768px only */
+
+@media only screen 
+and (min-width : 768px) {
+	.portfolio-plus-item {
+		width: 31%;
+		border:  0px solid pink;
+		margin-top: 2em;
+	}
+}
+.portfolio-plus-item .featured-image img {
+	max-width: 100%;
+}
+
+/* Cancel the Strike-Trough Style */
+
+.nav-menu a:before, .entry-content a:before, .entry-footer a:before, .entry-meta a:before, .author-box a:before, body #infinite-handle span:before, .comments-area .nav-links a:before, .comment-author a:before, .comment-content a:before, .comment-reply-link:before, .comment-form a:before, .paging-navigation a:before, .category-filter a:before, .single-additional a:before, .sd-social-text ul li a:after, .portfolio-archive .entry-title a:before {
+	content: none;
+}
+
+a:hover {
+/*	color: #cfa1ee;*/
+	text-shadow: 0 0 10px #653cfe;
+}
+
