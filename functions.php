@@ -11,7 +11,10 @@ function custom_register_styles() {
 	
 	wp_enqueue_style( 
 		'theme-style', // $handle
-		get_stylesheet_directory_uri() . '/styles/dev/00-init.css' // $src 
+		get_stylesheet_directory_uri() . '/styles/dev/00-init.css', // $src 
+		array(), // deps
+		'190918', // version
+		'all' // media
 	);
 	
 	wp_enqueue_script( 

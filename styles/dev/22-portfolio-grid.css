@@ -9,3 +9,29 @@
 	}
 	
 }
+
+.portfolio-plus-item {
+	
+	background-color: lavender;
+}
+
+.portfolio-plus-item:not(.has-post-thumbnail) {
+	padding: 1em;
+}
+
+
+/* Override */
+.infinite-scroll .posts-navigation, 
+.infinite-scroll .paging-navigation {
+	display: block;
+}
+
+.paging-navigation .next,
+.paging-navigation .prev  {
+	display: none;
+}
+
+body.archive .posts-navigation {
+	display: none;
+}
+

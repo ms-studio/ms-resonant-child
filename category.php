@@ -15,6 +15,13 @@ get_header(); ?>
 			if ( have_posts() ) :
 
 			?>
+			
+				<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
 				<div class="scrollable portfolio-listing">
 
@@ -41,6 +48,11 @@ get_header(); ?>
 				</div><!-- .scrollable -->
 
 				<?php
+				
+				// Archives numbered paging
+				resonant_numbers_pagination();
+				
+				
 					the_posts_navigation( array(
 						'prev_text' => esc_html__( 'Prev', 'resonant' ),
 						'next_text' => esc_html__( 'Next', 'resonant' )

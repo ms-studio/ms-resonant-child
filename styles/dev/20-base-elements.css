@@ -7,7 +7,7 @@ hr {
 /* @end */
 
 body {
-	background: linear-gradient(
+/*	background: linear-gradient(
 		90deg, 
 		#d0c4ff 0%, 
 		#f0ecff 5%, 
@@ -15,7 +15,7 @@ body {
 		#fff 90%,
 		#f0ecff 95%, 	
 		#d0c4ff 100%
-	);
+	);*/
 }
 
 .site,
@@ -91,7 +91,7 @@ body.header-scrolled .site-description {
 	margin-left: 0;
 	margin-right: 0;
 	text-align: left;
-	background: #e4e4e4;
+	background: #efe3ff;
 	padding: 2rem 3rem;
 }
 
