@@ -59,13 +59,15 @@ body.header-scrolled .site-description {
 }
 
 .entry-content p a,
-.entry-content ul a {
+.entry-content ul a,
+.entry-content ol a{
 	background-color: #fefcbe;
 	border-bottom: 2px solid rgba(0,0,0,0.2);
 }
 
 .entry-content p a:hover,
-.entry-content ul a:hover {
+.entry-content ul a:hover,
+.entry-content ol a:hover {
 	background-color: #fffb80;
 	border-bottom: 2px solid rgba(0,0,0,1);
 	text-shadow: none;
