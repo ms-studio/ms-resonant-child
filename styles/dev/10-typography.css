@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
 	font-family: 'Source Serif Pro';
 	font-weight: 400;
 	font-style: italic;
-	src: url('fonts/SourceSerifPro-it.woff2') format('woff2'),
-	url('fonts/SourceSerifPro-it.woff') format('woff');
-}
+	src: url('../../fonts/SourceSerifPro-it.woff2') format('woff2'),
+	url('../../fonts/SourceSerifPro-it.woff') format('woff');
+} */
 
 /*@font-face {
 	font-family: 'Source Serif Pro';
@@ -22,13 +22,13 @@
 	url('fonts/SourceSerifPro-extralightit.woff') format('woff');
 }*/
 
-@font-face {
+/* @font-face {
 	font-family: 'Source Serif Pro';
 	font-weight: 700;
 	font-style: italic;
-	src: url('fonts/SourceSerifPro-boldit.woff2') format('woff2'),
-	url('fonts/SourceSerifPro-boldit.woff') format('woff');
-}
+	src: url('../../fonts/SourceSerifPro-boldit.woff2') format('woff2'),
+	url('../../fonts/SourceSerifPro-boldit.woff') format('woff');
+} */
 
 
 /* @group Typography */

@@ -50,7 +50,7 @@ function ms_change_resonant_styles() {
 	
 	wp_enqueue_style( 
 			'source-serif-pro', 
-			'https://fonts.googleapis.com/css?family=News+Cycle:400|Archivo+Narrow:600|Source+Serif+Pro:400,700', // main.css
+			'https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=News+Cycle&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap',
 			false, // dependencies
 			null // version
 	); 
