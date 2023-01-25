@@ -45,3 +45,12 @@ a.single-img-parent {
 }
 
 /* @end */
+
+/*
+* Image blocks need bottom margin
+*/
+
+.wp-block-image,
+.wp-block-gallery {
+	margin-bottom: 2em;
+}
